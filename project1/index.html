@@ -4,8 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- .Project: Personal Portfolio Website (HTML Structure, Semantic HTML, Basic CSS)
+
+Question: Design and build a personal portfolio website. This should include an "About Me" section, a "Projects" section (with at least three project entries), and a "Contact Me" section with a basic form. Ensure you use appropriate HTML5 semantic tags (<header>, <nav>, <main>, <section>, <footer>, <article>, etc.) to structure your content. Apply basic CSS to style the typography (fonts, colors, sizes) and provide a clean, readable layout without using advanced layout techniques.
+ -->
+    <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    @media screen and (orientation: landscape) {
+    body {
+        border: yellow;
+    }
+}
+    @media only screen and (max-width: 600px) {
+        body {
+            /* font-size: 14px; */
+            background-color: lightblue;
+        }
+    }
+</style>
 <body>
+    <header> 
+        <div class="portfoliocontainer">
+    <div class="portfolio">
+        <h1>My Portfolio</h1>
+    </div>
+</div>
+</header>
+<div class="background">
+<div class="lowernavbar">
+    <nav class="menulist">
     
-</body>
-</html>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+   
+</nav>
+</div>
+
+
+<main>
+    <div class="aboutcontainer">
+        <div class="about">
+            <article>
+                <h2>About Me :</h2>
+                <p>Hello! I'm Srinivas BH, a passionate front-end web developer dedicated to crafting accessible, responsive, and user-friendly web experiences. With solid skills in HTML, CSS, and JavaScript, I strive to write clean, maintainable code that not only functions well but also delights users.</p>
+                <p>I’m committed to continuous learning and staying updated with the latest web technologies to deliver high-quality digital solutions. When I'm not coding, I enjoy exploring UI design trends and enhancing my skill set.</p>
+            </article>
+        </div>
+    </div>
+    <div class="projectcontainer">
+        <div class="proect">
+            <h2>Projects :</h2>
+        </div>
+        <div class="projectcardcontainer">
+            <div class="projectcard">
+                <div class="projectnumber"><span>1</span></div>
+                <h3>Project 1</h3>
+                <p>A personal portfolio website showcasing my skills and projects.</p>
+                <a href="https://github.com/srinivasbh/portfolio">View Project</a>
+            </div>
+            <div class="projectcard">
+                <div class="projectnumber"><span>2</span></div>
+                <h3>Project 1</h3>
+                <p>A personal portfolio website showcasing my skills and projects.</p>
+                <a href="https://github.com/srinivasbh/portfolio">View Project</a>
+            </div>
+            <div class="projectcard">
+                <div class="projectnumber"><span>3</span></div>
+                <h3>Project 1</h3>
+                <p>A personal portfolio website showcasing my skills and projects.</p>
+                <a href="https://github.com/srinivasbh/portfolio">View Project</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section> -->
+</main>
+
+<!-- <footer>
+    <p>&copy; 2023 My Portfolio</p>
+</footer> -->

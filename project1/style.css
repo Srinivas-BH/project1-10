@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.portfoliocontainer{
+    /* border: 2px solid black; */
+    width: 40%;
+
+}
+.portfolio h1{
+    margin-left: 10px;
+    padding: 4px 8px ;
+    text-decoration: dotted underline;
+
+
+}
+.lowernavbar{
+    /* border: 2px solid red; */
+    margin-top: 30px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.menulist{
+    width: 45%;
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    background-color: aqua;
+    box-shadow: 2px 3px 14px rgb(0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    height: 7vh;
+    cursor: pointer;
+
+}
+.menulist{
+     /* height: 50%; */
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+.background{
+    background-color: lightblue;
+    height: 100%;
+}
+
+.about{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.about h1{
+    /* text-decoration: underline; */
+    margin-left: 100px;
+    padding: 4px 8px ;
+}
+.about p{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.projectcontainer{
+    border: 2px solid black;
+    margin-top: 40px;
+}
+.projectcardcontainer{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    gap: 20px;
+}
+.projectcard{
+    border: 2px solid black;
+    padding: 10px 12px;
+    /* width: 30%; */
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    width: 12%;
+    height: 40vh;
+    position: relative;
+}
+.projectnumber{
+    left: -18px;
+   
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.projectnumber span{
+
+    color: rgba(0,0,0,0.8);
+    -webkit-text-stroke: 0.125rem rgb(42, 37, 37);
+    text-shadow: 0 0 1.5rem rgba(0,0,0,0.5);
+    font-size: 2.5rem;
+}

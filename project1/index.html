@@ -1,105 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- .Project: Personal Portfolio Website (HTML Structure, Semantic HTML, Basic CSS)
-
-Question: Design and build a personal portfolio website. This should include an "About Me" section, a "Projects" section (with at least three project entries), and a "Contact Me" section with a basic form. Ensure you use appropriate HTML5 semantic tags (<header>, <nav>, <main>, <section>, <footer>, <article>, etc.) to structure your content. Apply basic CSS to style the typography (fonts, colors, sizes) and provide a clean, readable layout without using advanced layout techniques.
- -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  
 </head>
-<style>
-    @media screen and (orientation: landscape) {
-    body {
-        border: yellow;
-    }
-}
-    @media only screen and (max-width: 600px) {
-        body {
-            /* font-size: 14px; */
-            background-color: lightblue;
-        }
-    }
-</style>
 <body>
-    <header> 
-        <div class="portfoliocontainer">
-    <div class="portfolio">
+  <header>
+    <div class="portfoliocontainer">
+      <div class="portfolio">
         <h1>My Portfolio</h1>
+      </div>
     </div>
-</div>
-</header>
-<div class="background">
-<div class="lowernavbar">
-    <nav class="menulist">
-    
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-   
-</nav>
-</div>
+  </header>
 
-
-<main>
-    <div class="aboutcontainer">
-        <div class="about">
-            <article>
-                <h2>About Me :</h2>
-                <p>Hello! I'm Srinivas BH, a passionate front-end web developer dedicated to crafting accessible, responsive, and user-friendly web experiences. With solid skills in HTML, CSS, and JavaScript, I strive to write clean, maintainable code that not only functions well but also delights users.</p>
-                <p>I’m committed to continuous learning and staying updated with the latest web technologies to deliver high-quality digital solutions. When I'm not coding, I enjoy exploring UI design trends and enhancing my skill set.</p>
-            </article>
-        </div>
+  <div class="background">
+    <div class="lowernavbar">
+      <nav class="menulist">
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="projectcontainer">
-        <div class="project">
-            <h2>Projects :</h2>
-        </div>
-        <div class="projectcardcontainer">
-            <div class="projectcard">
-                <div class="projectnumber"><span>1</span></div>
-                <h3>Project 1</h3>
-                <p>A personal portfolio website showcasing my skills and projects.</p>
-                <a href="https://github.com/srinivasbh/portfolio">View Project</a>
-            </div>
-            <div class="projectcard">
-                <div class="projectnumber"><span>2</span></div>
-                <h3>Project 2</h3>
-                <p>Product Landing Page (Box Model, Basic Layout, Advanced HTML Forms).</p>
-                <a href="https://github.com/srinivasbh/portfolio">View Project</a>
-            </div>
-            <div class="projectcard">
-                <div class="projectnumber"><span>3</span></div>
-                <h3>Project 3</h3>
-                <p>Blog Post Template (Semantic HTML, Advanced HTML, Basic CSS).</p>
-                <a href="https://github.com/srinivasbh/portfolio">View Project</a>
-            </div>
-            <div class="projectcard">
-                <div class="projectnumber"><span>4</span></div>
-                <h3>Project 4</h3>
-                <p>Project: Simple Grid-Based Gallery (CSS Layout, Responsive Design).</p>
-                <a href="https://github.com/srinivasbh/portfolio">View Project</a>
-            </div>
-            <div class="projectcard">
-                <div class="projectnumber"><span>5</span></div>
-                <h3>Project 5</h3>
-                <p>Project: Sticky Navigation Bar (CSS Positioning, HTML Structure).</p>
-                <a href="https://github.com/srinivasbh/portfolio">View Project</a>
-            </div>
-            <div class="projectcard">
-                <div class="projectnumber"><span>6</span></div>
-                <h3>Project 6</h3>
-                <p>Project: Basic E-commerce Product Listing (HTML Tables/Lists, Semantic HTML, CSS Styling).</p>
-                <a href="https://github.com/srinivasbh/portfolio">View Project</a>
-            </div>
-        </div>
-    </div>
-    
+  </div>
 
-</main>
+  <main>
+    <section id="about" class="aboutcontainer">
+      <div class="about">
+        <article>
+          <h2>About Me :</h2>
+          <p>Hello! I'm Srinivas BH, a passionate front-end web developer dedicated to crafting accessible, responsive, and user-friendly web experiences. With solid skills in HTML, CSS, and JavaScript, I strive to write clean, maintainable code that not only functions well but also delights users.</p>
+          <p>I’m committed to continuous learning and staying updated with the latest web technologies to deliver high-quality digital solutions. When I'm not coding, I enjoy exploring UI design trends and enhancing my skill set.</p>
+        </article>
+      </div>
+    </section>
 
-<!-- <footer>
-    <p>&copy; 2023 My Portfolio</p>
-</footer> -->
+    <section id="projects" class="projectcontainer">
+      <div class="project">
+        <h2>Projects :</h2>
+      </div>
+      <div class="projectcardcontainer">
+        <!-- Project Cards -->
+        <article class="projectcard">
+          <div class="projectnumber"><span>1</span></div>
+          <h3>Project 1</h3>
+          <p>A personal portfolio website showcasing my skills and projects.</p>
+          <a href="https://github.com/srinivasbh/portfolio">View Project</a>
+        </article>
+
+        <article class="projectcard">
+          <div class="projectnumber"><span>2</span></div>
+          <h3>Project 2</h3>
+          <p>Product Landing Page (Box Model, Basic Layout, Advanced HTML Forms).</p>
+          <a href="https://github.com/srinivasbh/portfolio">View Project</a>
+        </article>
+
+        <article class="projectcard">
+          <div class="projectnumber"><span>3</span></div>
+          <h3>Project 3</h3>
+          <p>Blog Post Template (Semantic HTML, Advanced HTML, Basic CSS).</p>
+          <a href="https://github.com/srinivasbh/portfolio">View Project</a>
+        </article>
+
+        <article class="projectcard">
+          <div class="projectnumber"><span>4</span></div>
+          <h3>Project 4</h3>
+          <p>Simple Grid-Based Gallery (CSS Layout, Responsive Design).</p>
+          <a href="https://github.com/srinivasbh/portfolio">View Project</a>
+        </article>
+
+        <article class="projectcard">
+          <div class="projectnumber"><span>5</span></div>
+          <h3>Project 5</h3>
+          <p>Sticky Navigation Bar (CSS Positioning, HTML Structure).</p>
+          <a href="https://github.com/srinivasbh/portfolio">View Project</a>
+        </article>
+
+        <article class="projectcard">
+          <div class="projectnumber"><span>6</span></div>
+          <h3>Project 6</h3>
+          <p>Basic E-commerce Product Listing (HTML Tables/Lists, Semantic HTML, CSS Styling).</p>
+          <a href="https://github.com/srinivasbh/portfolio">View Project</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contactcontainer">
+      <h2>Contact Me :</h2>
+      <p>If you'd like to get in touch, feel free to reach out via email.</p>
+      <form action="#" method="POST" class="contact">
+        <div class="username">
+          <label for="username" style="display: none;">Name</label>
+          <input type="text" id="username" name="username" placeholder="Enter your name" required />
+        </div>
+        <div class="email">
+          <label for="email" style="display: none;">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+        <div class="button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio</p>
+  </footer>
+</body>
+</html>

@@ -1,115 +1,170 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.portfoliocontainer{
-    /* border: 2px solid black; */
-    width: 40%;
-
-}
-.portfolio h1{
-    margin-left: 10px;
-    padding: 4px 8px ;
-    text-decoration: dotted underline;
-
-
-}
-.lowernavbar{
-    /* border: 2px solid red; */
-    margin-top: 30px;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    
-
-}
-.menulist{
-    width: 45%;
-    list-style: none;
-    display: flex;
-    margin-top: 10px;
-    justify-content: space-evenly;
-    border-radius: 50px;
-    background-color: aqua;
-    box-shadow: 2px 3px 14px rgb(0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    height: 7vh;
-    cursor: pointer;
-
-}
-.menulist{
-     /* height: 50%; */
-    display: flex;
-    align-items: center;
-    position:relative;
-}
-.background{
-    background-color: lightblue;
-    height: 100%;
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background-color: #fff;
+color: #333;
 }
 
-.about{
-    margin-top: 40px;
-    margin-left: 10px;
-    font-size: larger;
+header, main, footer {
+padding: 20px;
 }
 
-.about p{
-    font-weight: 400;
-    font-size: 1.2rem;
+.portfoliocontainer,
+.aboutcontainer,
+.projectcontainer,
+.contactcontainer {
+max-width: 1200px;
+margin: auto;
+padding: 20px;
 }
-.project{
-    margin-top: 40px;
-    margin-left: 10px;
-    font-size: larger;
+
+/* Navigation */
+.lowernavbar nav ul {
+list-style: none;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+gap: 15px;
+padding: 0;
+margin: 0;
+}
+.lowernavbar nav ul li{
+list-style: none;
+margin: 0;
+padding: 0;
+justify-content: center;
+align-items: center;
+}
+.lowernavbar nav ul li a {
+
+text-decoration: none;
+font-weight: bold;
+margin-left: 24px;
+}
+
+.lowernavbar nav ul li a:visited {
+color: purple;
+}
+
+.lowernavbar nav ul li a:hover {
+color: green;
+}
+
+.lowernavbar nav ul li a:active {
+color: red;
+}
+
+/* Project Cards */
+.projectcardcontainer {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.projectcard {
+border: 1px solid #ccc;
+padding: 15px;
+border-radius: 5px;
+background-color: #f9f9f9;
+}
+
+/* Form */
+.contact form input,
+.contact form button {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+font-size: 1rem;
+}
+
+/* Footer */
+footer {
+text-align: center;
+background-color: #f0f0f0;
+padding: 20px;
+}
+
+/* Media Queries */
+
+/* Tablets (≥600px) */
+@media (min-width: 2330px) {
+.lowernavbar nav ul {
+flex-direction: row;
+justify-content: center;
+}
+
+.projectcardcontainer {
+flex-direction: row;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+.projectcard {
+flex: 1 1 calc(50% - 20px);
+max-width: calc(50% - 20px);
+}
+}
+
+/* Laptops & Desktops (≥900px) */
+@media (min-width: 900px) {
+.projectcard {
+flex: 1 1 calc(33.333% - 20px);
+max-width: calc(33.333% - 20px);
+}
+
+.contact form {
+max-width: 600px;
+margin: auto;
+}
+
+.lowernavbar nav ul {
+justify-content: flex-end;
+}
+
+header h1 {
+font-size: 2.5rem;
+}
+
+.about p {
+font-size: 1.1rem;
+}
+}
+.aboutcontainer{
+background-color: #f0f0f0;
 }
 .projectcontainer{
-    /* border: 2px solid black; */
-    margin-top: 40px;
+background-color: #e0e0e0;
 }
-.projectcardcontainer{
+.contactcontainer{
+background-color: #d0d0d0;
+}
+.username{
     display: flex;
     justify-content: center;
-    /* flex-direction: column; */
-    gap: 20px;
+    align-items: center;
 }
-.projectcard{
-    border: 2px solid black;
-    background-color: aqua;
-    padding: 10px 12px;
-    /* width: 30%; */
-    margin-left: 10px;
-    margin-top: 15px;
-    border-radius: 5px;
-    width: 12%;
-    height: 25vh;
-    position: relative;
+.email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
 }
-.projectnumber{
-    left: -22px;
-   
-    position: absolute;
-    font-weight: bold;
-    font-size: 1.5rem;
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
-.projectnumber span{
+.username input{
+    border-radius: 40px;
+}
+.email input{
+    border-radius: 40px;
+}
 
-    color: rgba(0,0,0,0.8);
-    -webkit-text-stroke: 0.125rem rgb(42, 37, 37);
-    text-shadow: 0 0 1.5rem rgba(0,0,0,0.5);
-    font-size: 2.5rem;
-}
-a:visited{
-  
-    color: black;
-}
-a:link{
-    color: blue;
-}
-a:hover{
-    color: green;
-}
-a:active{
-    background-color: black;
+.button button{
+    border-radius: 40px;
 }

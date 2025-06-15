@@ -196,7 +196,7 @@ header p{
     }
 
     .summary img {
-        width: auto;
+        width: 20vw;
         height: 15vh;
     }
     
@@ -229,6 +229,14 @@ header p{
         font-size: 1.5rem;
     }
 
-    .commentcontainer {
-        pa
+}
+@media screen and (min-width:481px){
+    .summary img{
+        width: 30vw;
+        height: 15vh;
+    }
+    .summary{
+        padding-bottom: 3rem;
+    }
+}
 

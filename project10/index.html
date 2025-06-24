@@ -3,19 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Indian Railway Services</title>
+  <title>Mumbai Ocean Port Services</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 2rem;
-      background-color: #f9f9f9;
-      color: #333;
+      margin: 0;
+      padding: 0;
+      background-color: #e0f7fa; /* light ocean tone */
+      color: #00334e;
     }
 
-    h1 {
+    header {
+      background: linear-gradient(to right, #01579b, #0288d1); /* deep blue ocean gradient */
+      padding: 2rem 1rem;
+      color: white;
       text-align: center;
-      margin-bottom: 3rem;
-      color: #d32f2f; /* Indian Railways red */
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1px;
     }
 
     .services-container {
@@ -23,37 +31,39 @@
       flex-wrap: wrap;
       gap: 2rem;
       justify-content: center;
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     .service-card {
       background: white;
       border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
       padding: 2rem;
-      flex: 1 1 45%; /* grow, shrink, basis */
+      flex: 1 1 45%;
       max-width: 45%;
       box-sizing: border-box;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .service-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
 
     .service-card h2 {
       margin-top: 0;
-      color: #d32f2f;
+      color: #01579b;
       margin-bottom: 1rem;
+      font-size: 1.4rem;
     }
 
     .service-card p {
       font-size: 1rem;
-      line-height: 1.5;
-      margin: 0;
+      line-height: 1.6;
     }
 
-    /* Medium screens (tablet) */
     @media (max-width: 900px) {
       .service-card {
         max-width: 80%;
@@ -61,7 +71,6 @@
       }
     }
 
-    /* Small screens (mobile) */
     @media (max-width: 600px) {
       .services-container {
         flex-direction: column;
@@ -77,27 +86,29 @@
 </head>
 <body>
 
-  <h1>Indian Railway Services</h1>
+  <header>
+    <h1>Mumbai Ocean Port Services</h1>
+  </header>
 
   <div class="services-container">
     <section class="service-card">
-      <h2>Online Ticket Booking</h2>
-      <p>Book train tickets easily from anywhere using the official IRCTC platform with secure payment options.</p>
+      <h2>Cargo Shipping & Logistics</h2>
+      <p>Efficient cargo handling and logistics services for international and coastal shipments at Mumbai Port.</p>
     </section>
 
     <section class="service-card">
-      <h2>Express Train Services</h2>
-      <p>Fast and efficient express trains connecting major cities with comfortable coaches and amenities.</p>
+      <h2>Passenger Ferry Services</h2>
+      <p>Daily passenger ferry routes to nearby coastal cities and islands, offering scenic and comfortable travel.</p>
     </section>
 
     <section class="service-card">
-      <h2>Parcel and Freight Services</h2>
-      <p>Reliable transportation for goods and parcels across the country with timely delivery and safety.</p>
+      <h2>Customs & Clearance Support</h2>
+      <p>Hassle-free documentation, inspection, and customs clearance assistance for import/export operations.</p>
     </section>
 
     <section class="service-card">
-      <h2>Onboard Catering</h2>
-      <p>Enjoy delicious meals and refreshments served onboard during your journey on selected trains.</p>
+      <h2>Marine Engineering & Docking</h2>
+      <p>Repair docks, refueling stations, and engineering workshops for maintenance of vessels and shipping equipment.</p>
     </section>
   </div>
 

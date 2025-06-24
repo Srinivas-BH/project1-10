@@ -1,0 +1,68 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #fffaf0;
+    }
+
+    nav {
+      background-color: #595e76;
+      color: white;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Changed section styles to div */
+    div {
+      padding: 80px 20px;
+      min-height: 100vh;
+    }
+
+    #kerala {
+      background-color: orange;
+    }
+
+    #goa {
+      background-color: white;
+    }
+
+    #manali {
+      background-color: rgb(128, 246, 128);
+    }
+
+    h2 {
+      color: #00695c;
+      text-align: center;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 10px auto;
+      font-size: 1.1rem;
+    }
+    /* Media Query for smaller screens */

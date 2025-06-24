@@ -1,0 +1,64 @@
+body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+
+    header {
+      background-color: #79a3cd;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    div {
+      background-color: rgb(237, 120, 120);
+      border: 2px solid #000407;
+      border-radius: 8px;
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    div h2 {
+      color: #04172a;
+      margin-top: 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    div p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    .founders {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #081b2e;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 0 0.5rem;
+      }
+
+      div {
+        padding: 1rem;
+      }
+    }

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luxury Watch Collection</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1b1b1b, #2e2e2e);
+      color: #f5f5f5;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #d4af37; /* Gold tone */
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+    }
+
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    article.product {
+      background: #121212;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(255, 215, 0, 0.15);
+    }
+
+    .product img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .product-content {
+      padding: 1rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product h2 {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+      color: #f9f9f9;
+    }
+
+    .product p.description {
+      font-size: 0.95rem;
+      color: #bbb;
+      flex-grow: 1;
+    }
+
+    .product .price {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #d4af37;
+      margin-top: 0.5rem;
+    }
+
+    .product button {
+      margin-top: 1rem;
+      padding: 0.6rem;
+      background-color: #d4af37;
+      color: #121212;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .product button:hover:not(.sold-out) {
+      background-color: #bfa233;
+    }
+
+    .sold-out {
+      background-color: #777;
+      color: #ccc;
+      cursor: not-allowed;
+    }
+
+    .status {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #b71c1c;
+      color: white;
+      font-size: 0.75rem;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    .sold-out-label {
+      background-color: #555;
+    }
+
+    @media (max-width: 400px) {
+      body {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Luxury Watch Collection</h1>
+
+  <div class="product-list">
+
+    <article class="product">
+      <img src="img1 prj6.jpeg" alt="Gold-Plated Chronograph Watch" />
+      <div class="product-content">
+        <h2>Gold Chronograph</h2>
+        <p class="description">Precision meets elegance in this gold-plated chronograph with leather straps.</p>
+        <div class="price">₹24,999</div>
+        <button>Add to Cart</button>
+      </div>
+    </article>
+
+    <article class="product">
+      <img src="img2 prj6.jpg" alt="Midnight Black Automatic Watch" />
+      <div class="product-content">
+        <h2>Midnight Automatic</h2>
+        <p class="description">Sleek, self-winding mechanical watch with a premium black steel case.</p>
+        <div class="price">₹29,499</div>
+        <button>Add to Cart</button>
+      </div>
+    </article>
+
+    <article class="product">
+      <img src="img3 prj6.jpg" alt="Silver Mesh Strap Women's Watch" />
+      <div class="product-content">
+        <h2>Silver Elegance</h2>
+        <p class="description">A minimalist silver mesh watch for timeless everyday luxury.</p>
+        <div class="price">₹18,799</div>
+        <button>Add to Cart</button>
+      </div>
+    </article>
+
+    <article class="product">
+      <img src="img4 prj6.webp" alt="Limited Edition Classic Watch" />
+      <div class="product-content">
+        <h2>Classic Heritage</h2>
+        <p class="description">A collector’s dream – heritage style in a limited edition finish.</p>
+        <div class="price">₹36,000</div>
+        <button class="sold-out" disabled aria-disabled="true">Sold Out</button>
+        <span class="status sold-out-label">Sold Out</span>
+      </div>
+    </article>
+
+    <article class="product">
+      <img src="img5 prj6.jpg" alt="Diamond Studded Dress Watch" />
+      <div class="product-content">
+        <h2>Diamond Luxe</h2>
+        <p class="description">Dazzle with this diamond-studded masterpiece crafted for grand occasions.</p>
+        <div class="price">₹54,999</div>
+        <button>Add to Cart</button>
+      </div>
+    </article>
+
+  </div>
+
+</body>
+</html>

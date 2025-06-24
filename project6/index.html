@@ -1,176 +1,91 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bodycon Dress Collection</title>
+  <title>Discover Thailand Blog</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fff0f5;
-      margin: 0;
-      padding: 2rem;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background-color: #f9f9f9;
+      color: #333;
     }
 
     h1 {
       text-align: center;
+      margin-bottom: 3rem;
+      color: #2c3e50;
+    }
+
+    article {
+      background-color: white;
+      border-radius: 8px;
+      padding: 1.5rem 2rem;
       margin-bottom: 2rem;
-      color: #c2185b;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
     }
 
-    .product-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+    article:hover {
+      transform: translateY(-4px);
     }
 
-    article.product {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      position: relative;
+    article h2 {
+      margin-top: 0;
+      color: #2980b9;
     }
 
-    .product img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
+    .meta {
+      font-size: 0.9rem;
+      color: #7f8c8d;
+      margin-bottom: 1rem;
     }
 
-    .product-content {
-      padding: 1rem;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    p.summary {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
     }
 
-    .product h2 {
-      font-size: 1.2rem;
-      margin: 0.5rem 0;
-      color: #333;
-    }
-
-    .product p.description {
-      font-size: 0.95rem;
-      color: #666;
-      flex-grow: 1;
-    }
-
-    .product .price {
-      font-size: 1.1rem;
+    a.read-more {
+      text-decoration: none;
+      color: #e74c3c;
       font-weight: bold;
-      color: #2e7d32;
-      margin-top: 0.5rem;
+      transition: color 0.3s ease;
     }
 
-    .product button {
-      margin-top: 1rem;
-      padding: 0.6rem;
-      background-color: #c2185b;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .product button:hover:not(.sold-out) {
-      background-color: #a3154d;
-    }
-
-    .sold-out {
-      background-color: #ccc;
-      color: #666;
-      cursor: not-allowed;
-      pointer-events: none;
-    }
-
-    .status {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background-color: #d32f2f;
-      color: white;
-      font-size: 0.75rem;
-      padding: 4px 8px;
-      border-radius: 4px;
-    }
-
-    .sold-out-label {
-      background-color: #999;
-    }
-
-    @media (max-width: 400px) {
-      body {
-        padding: 1rem;
-      }
+    a.read-more:hover {
+      color: #c0392b;
     }
   </style>
 </head>
 <body>
 
-  <h1>Bodycon Dress Collection</h1>
+  <h1>Discover Thailand</h1>
 
-  <div class="product-list">
+  <article>
+    <h2>The Majesty of Thai Temples</h2>
+    <div class="meta">By <strong>Somsak Chanthavong</strong> | Published on June 12, 2025</div>
+    <p class="summary">Thailand’s temples, known as "wats", are architectural marvels steeped in history and spirituality. Explore iconic sites like Wat Arun and Wat Phra Kaew, and learn what makes each unique.</p>
+    <a href="#" class="read-more">Read More &rarr;</a>
+  </article>
 
-    <article class="product">
-      <img src="1.jpg" alt="Classic Red Bodycon Dress" />
-      <div class="product-content">
-        <h2>Classic Red Bodycon</h2>
-        <p class="description">A bold and elegant red dress perfect for evening parties and dates.</p>
-        <div class="price">₹1,799</div>
-        <button>Add to Cart</button>
-      </div>
-    </article>
+  <article>
+    <h2>Thai Cuisine: A Journey Through Flavor</h2>
+    <div class="meta">By <strong>Nok Supansa</strong> | Published on June 8, 2025</div>
+    <p class="summary">Thai food is renowned for its bold flavors, colorful presentation, and balance of sweet, sour, salty, and spicy. Dive into dishes like pad thai, green curry, and mango sticky rice.</p>
+    <a href="#" class="read-more">Read More &rarr;</a>
+  </article>
 
-    <article class="product">
-      <img src="2.jpg" alt="Black Velvet Bodycon Dress" />
-      <div class="product-content">
-        <h2>Black Velvet Bodycon</h2>
-        <p class="description">Chic velvet dress with a flattering silhouette and luxurious texture.</p>
-        <div class="price">₹2,299</div>
-        <button>Add to Cart</button>
-      </div>
-    </article>
-
-    <article class="product">
-      <img src="3.jpg" alt="Pink Lace Bodycon Dress" />
-      <div class="product-content">
-        <h2>Pink Lace Bodycon</h2>
-        <p class="description">Sweet and feminine dress with elegant lace details and a soft finish.</p>
-        <div class="price">₹1,499</div>
-        <button>Add to Cart</button>
-      </div>
-    </article>
-
-    <article class="product">
-      <img src="4.jpg" alt="Navy Blue Bodycon Dress" />
-      <div class="product-content">
-        <h2>Navy Blue Bodycon</h2>
-        <p class="description">Classy and confident, perfect for office dinners or formal events.</p>
-        <div class="price">₹1,999</div>
-        <button class="sold-out" aria-disabled="true">Sold Out</button>
-        <span class="status sold-out-label">Sold Out</span>
-      </div>
-    </article>
-
-    <article class="product">
-      <img src="5.jpg" alt="Sequin Party Bodycon Dress" />
-      <div class="product-content">
-        <h2>Sequin Party Bodycon</h2>
-        <p class="description">Shine on the dance floor with this eye-catching sequin dress.</p>
-        <div class="price">₹2,499</div>
-        <button>Add to Cart </button>
-      </div>
-    </article>
-
-  </div> 
+  <article>
+    <h2>Top Places to Visit in Bangkok</h2>
+    <div class="meta">By <strong>Anan Kridsada</strong> | Published on June 3, 2025</div>
+    <p class="summary">From vibrant street markets to serene river cruises and golden palaces, Bangkok offers an unforgettable mix of tradition and modern energy. Here are the must-see spots for your itinerary.</p>
+    <a href="#" class="read-more">Read More &rarr;</a>
+  </article>
 
 </body>
 </html>
